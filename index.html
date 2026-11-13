@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ketahanan Pangan - Mulai dari Kita</title>
+
+    <style>
+        /* ===== PENGATURAN DASAR ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f5f1e5;
+            color: #263d2c;
+            line-height: 1.7;
+        }
+
+        /* ===== BAGIAN HEADER ===== */
+        header {
+            background-color: #245c3a;
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header .emoji {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            max-width: 650px;
+            margin: auto;
+            color: #e4efdf;
+        }
+
+        /* ===== KONTEN UTAMA ===== */
+        main {
+            max-width: 950px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: #fffdf6;
+            padding: 30px;
+            border-radius: 18px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            color: #245c3a;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+
+        /* ===== DAFTAR TIPS ===== */
+        .tips-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .tip-card {
+            background-color: #edf3e9;
+            padding: 22px;
+            border-radius: 14px;
+            border-bottom: 4px solid #5c9562;
+            transition: transform 0.3s;
+        }
+
+        /* Efek ketika kartu disentuh atau diarahkan mouse */
+        .tip-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tip-card .icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .tip-card h3 {
+            color: #245c3a;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        /* ===== BAGIAN TAHUKAH KAMU ===== */
+        .fun-fact {
+            text-align: center;
+            background-color: #e4eddb;
+        }
+
+        .fun-fact h2 {
+            font-size: 27px;
+        }
+
+        #factText {
+            font-size: 18px;
+            margin: 20px 0;
+            min-height: 55px;
+        }
+
+        button {
+            background-color: #367849;
+            color: white;
+            border: none;
+            padding: 13px 28px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #245c3a;
+            transform: scale(1.05);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #245c3a;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* ===== RESPONSIVE UNTUK HP ===== */
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .tips-container {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 22px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BAGIAN JUDUL WEBSITE -->
+    <header>
+        <div class="emoji">🌱</div>
+        <h1>Ketahanan Pangan</h1>
+        <p>
+            Mulai dari Kita! Mari mengenal pentingnya menjaga
+            ketersediaan pangan untuk masa depan yang lebih baik.
+        </p>
+    </header>
+
+    <!-- BAGIAN KONTEN WEBSITE -->
+    <main>
+
+        <!-- PENJELASAN SINGKAT -->
+        <section>
+            <h2>🌾 Apa Itu Ketahanan Pangan?</h2>
+
+            <p>
+                Ketahanan pangan adalah kondisi ketika setiap orang
+                memiliki akses terhadap pangan yang cukup, aman,
+                bergizi, dan terjangkau untuk memenuhi kebutuhan hidup.
+            </p>
+
+            <p style="margin-top: 12px;">
+                Menjaga ketahanan pangan bukan hanya tugas pemerintah.
+                Kita sebagai pelajar juga bisa berkontribusi melalui
+                kebiasaan sederhana dalam kehidupan sehari-hari.
+            </p>
+        </section>
+
+        <!-- TIGA TIPS MENJAGA KETAHANAN PANGAN -->
+        <section>
+            <h2>💚 3 Tips Menjaga Ketahanan Pangan</h2>
+
+            <div class="tips-container">
+
+                <!-- Tips pertama -->
+                <div class="tip-card">
+                    <div class="icon">🍚</div>
+                    <h3>1. Hindari Membuang Makanan</h3>
+                    <p>
+                        Ambil makanan secukupnya dan habiskan makanan
+                        yang sudah disajikan agar tidak terbuang sia-sia.
+                    </p>
+                </div>
+
+                <!-- Tips kedua -->
+                <div class="tip-card">
+                    <div class="icon">🌽</div>
+                    <h3>2. Konsumsi Pangan Lokal</h3>
+                    <p>
+                        Pilih produk pangan lokal seperti singkong,
+                        jagung, ubi, dan hasil pertanian daerah.
+                    </p>
+                </div>
+
+                <!-- Tips ketiga -->
+                <div class="tip-card">
+                    <div class="icon">🌿</div>
+                    <h3>3. Manfaatkan Lahan Kosong</h3>
+                    <p>
+                        Tanam sayuran atau tanaman pangan di halaman
+                        rumah maupun menggunakan pot sederhana.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BAGIAN INTERAKTIF -->
+        <section class="fun-fact">
+
+            <h2>💡 Tahukah Kamu?</h2>
+
+            <p>
+                Klik tombol di bawah untuk mendapatkan fakta
+                dan tips menarik seputar ketahanan pangan!
+            </p>
+
+            <!-- Teks akan berubah setiap tombol diklik -->
+            <p id="factText">
+                Yuk, temukan fakta menarik tentang ketahanan pangan!
+            </p>
+
+            <button onclick="tampilkanFakta()">
+                Tahukah Kamu? ✨
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- BAGIAN PENUTUP WEBSITE -->
+    <footer>
+        <p>🌱 Ketahanan Pangan Dimulai dari Kita</p>
+        <p>Website Edukasi | Workshop Siswa Kelas 12</p>
+    </footer>
+
+    <script>
+        // ===== DATA FAKTA DAN TIPS =====
+
+        // Kumpulan informasi yang akan ditampilkan
+        const daftarFakta = [
+            "Indonesia memiliki beragam sumber pangan selain beras, seperti jagung, sagu, singkong, dan ubi.",
+
+            "Menghabiskan makanan adalah salah satu cara sederhana untuk mengurangi pemborosan pangan.",
+
+            "Menanam cabai dan sayuran di rumah dapat membantu memenuhi kebutuhan pangan keluarga.",
+
+            "Pangan lokal dapat membantu mendukung petani dan perekonomian daerah.",
+
+            "Menyimpan makanan dengan cara yang benar dapat membuatnya lebih tahan lama.",
+
+            "Mengonsumsi makanan bergizi dan beragam membantu menjaga kesehatan tubuh.",
+
+            "Mengolah sisa bahan makanan yang masih layak dapat membantu mengurangi sampah makanan."
+        ];
+
+        // Variabel untuk mengingat fakta yang sedang ditampilkan
+        let nomorFakta = -1;
+
+        // ===== FUNGSI TOMBOL TAHUKAH KAMU =====
+
+        function tampilkanFakta() {
+
+            // Jika masih ada fakta berikutnya, tampilkan fakta tersebut
+            nomorFakta++;
+
+            // Jika semua fakta sudah ditampilkan, kembali ke awal
+            if (nomorFakta >= daftarFakta.length) {
+                nomorFakta = 0;
+            }
+
+            // Mengambil elemen HTML berdasarkan ID
+            const teksFakta = document.getElementById("factText");
+
+            // Mengubah teks pada halaman website
+            teksFakta.textContent = daftarFakta[nomorFakta];
+
+        }
+    </script>
+
+</body>
+</html>
